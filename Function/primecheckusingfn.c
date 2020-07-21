@@ -5,7 +5,7 @@ int main(){
             printf("Enter an integer to check whether it is prime or not.\n");
             scanf("%d",&n);
 
-             if(primecheck()==1){
+             if(primecheck(n)==0){
                 printf("%d is prime.",n);
 
                 }
@@ -19,8 +19,7 @@ int primecheck(n){
                         if(n%c==0){
                             flag = 1;
                         }
-                        else{
-                        flag = 0 ;}
+                       
                     }
 
             return flag ;
